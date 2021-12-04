@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.Button {
+  width: 100%;
+  padding: 18px 0;
+  background: $dodger-blue;
+  box-shadow: 0px 2px 4px $brown-shaddow-hover8, 0px 4px 8px $brown-shaddow-hover8;
+  border: 2px solid $blue-border;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 12px 24px $brown-shaddow-hover8, 0px 24px 48px $brown-shaddow-hover16;
+  }
+
+  &:focus {
+    border: 2px solid $brown-shaddow;
+  }
+
+  &:active {
+    border: 2px solid $brown-border;
+  }
+}
+
+.disabled {
+  background: $gray-basic;
+  box-shadow: none;
+  border: 2px solid $gray-border;
+  border-radius: 6px;
+  cursor: not-allowed ;
+  color: $brown-btn-disabled !important;
+  
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus {
+    border: none;
+  }
+}

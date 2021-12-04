@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import 'variables.scss';
+
+
+.form-typography {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+
+    color: $dark-brown;
+  }
+
+  span {
+    
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $dark-brown;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $dodger-blue;
+  }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-gray;
+  }
+
+  input {
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-brown;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $gray-place;
+  }
+
+  input::-moz-placeholder {
+    color: $gray-place;
+  }
+
+  .select__title {
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-brown;
+  }
+
+  .select__title-placeholder {
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $gray-place;
+  }
+
+  .select__label {
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-gray;
+  }
+
+  .agree {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+   color: $dark-gray;
+  }
+
+  button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+    color: $gray;
+  }
+
+  .error {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color:$red;
+  }
+}
+
