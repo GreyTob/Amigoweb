@@ -1,10 +1,22 @@
-import { observer } from 'mobx-react-lite'
-import form from '../../store/form'
-import classes from './Agree.module.scss'
+import { observer } from 'mobx-react-lite';
+import form from '../../../store/form';
+import classes from './Agree.module.scss';
 
-export const Agree: React.FC = observer(() =>  (
-    <div className={classes.Agree}>
-      <input id='custom-checkbox' className={classes['custom-checkbox']} type="checkbox" onChange={() => form.agreeHandler()} required/>
-      <label className='agree' htmlFor='custom-checkbox'>Принимаю&nbsp;<a href="/">условия</a>&nbsp;использования</label>  
-    </div>
-))
+const Agree: React.FC = () => (
+  <div className={classes.agree}>
+    <input
+      id="custom-checkbox"
+      className={classes['custom-checkbox']}
+      type="checkbox"
+      onChange={() => form.agreeHandler()}
+      disabled={!form.isFormValid}
+      // checked={form.isFormValid}
+      required
+    />
+    <label htmlFor="custom-checkbox">
+      Принимаю&nbsp;<a href="/">условия</a>&nbsp;использования
+    </label>
+  </div>
+);
+
+export default observer(Agree);

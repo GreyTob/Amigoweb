@@ -1,18 +1,21 @@
-import classes from './Button.module.scss'
+import classes from './Button.module.scss';
 
 interface IButtonProps {
-  value: string
-  disabled:boolean
-  type: any
+  value: string;
+  disabled: boolean;
+  type: any;
 }
 
-export const Button: React.FC<IButtonProps> = ({value, disabled, type}) => {
-  const cls = [classes.Button]
+export const Button: React.FC<IButtonProps> = ({ value, disabled, type }) => {
+  const cls = [classes.button];
 
-  if (disabled)
-    cls.push(classes.disabled)
-    
-  return <button type={type} disabled={disabled} className={cls.join(' ')}>{value}</button>
- 
-}
+  if (disabled) {
+    cls.push(classes.disabled);
+  }
 
+  return (
+    <button type={type} disabled={disabled} className={cls.join(' ')}>
+      {value}
+    </button>
+  );
+};

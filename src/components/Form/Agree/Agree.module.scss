@@ -1,7 +1,13 @@
 @import '../../UI/variables.scss';
 
-.Agree {
+.agree {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: $dark-gray;
   margin-bottom: 38px;
+  
 
   .custom-checkbox {
     position: absolute;
@@ -9,11 +15,15 @@
     opacity: 0;
   }
   
+  
+  
   .custom-checkbox+label {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    cursor: pointer;
   }
+
   .custom-checkbox+label::before {
     margin-right: 10px;
     content: '';
