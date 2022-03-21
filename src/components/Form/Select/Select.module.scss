@@ -30,8 +30,12 @@
     align-items: center;
     width: 100%;
     height: 100%;
-  
-    color: $gray-place;
+
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-brown;
+
     cursor: pointer;
   
     &::before,
@@ -50,6 +54,13 @@
     &::after {
       transform: translate(3px, -50%) rotate(-45deg);
     }
+
+    &_placeholder {
+      font-size: 16px;
+      line-height: 21px;
+
+      color: $gray-place;
+    }
   
   }
 
@@ -63,6 +74,8 @@
     
     flex-direction: column;
     width: 100%;
+
+    
 
     background: $white;
     border: 1px solid $gray-basic;
@@ -85,6 +98,11 @@
     width: 100%;
     height: 44px;
     padding: 15px;
+
+    font-size: 16px;
+    line-height: 21px;
+
+    color: $dark-gray;
 
     transition: all 0.2s ease-out;
     cursor: pointer;

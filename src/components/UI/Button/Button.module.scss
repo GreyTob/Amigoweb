@@ -1,6 +1,13 @@
 @import '../variables.scss';
 
-.Button {
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+  color: $gray;
+ 
   width: 100%;
   padding: 18px 0;
   background: $dodger-blue;

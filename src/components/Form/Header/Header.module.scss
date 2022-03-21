@@ -1,7 +1,19 @@
+@import '../../UI/variables.scss';
+
 .Header {
   margin-bottom: 55px;
 
   h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+
+    color: $dark-brown;
+    margin-bottom: 8.5px;
+  }
+
+  span {
+    color: $dark-brown;
     margin-bottom: 8.5px;
   }
 }

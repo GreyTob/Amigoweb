@@ -1,6 +1,6 @@
 import classes from './Header.module.scss'
 
-export const Header: React.FC = () =>  (
+const Header: React.FC = () =>  (
   <header className={classes.Header}>
     <legend>
       <h1 >Регистрация</h1>
@@ -8,3 +8,5 @@ export const Header: React.FC = () =>  (
     <span>Уже есть аккаунт?</span>&nbsp;<a href="/">Войти</a>
   </header>
 )
+
+export default Header
